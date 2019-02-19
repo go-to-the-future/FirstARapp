@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mtc-6R-sFz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Memo View Controller-->
+        <scene sceneID="kdX-Km-rdw">
+            <objects>
+                <viewController id="mtc-6R-sFz" customClass="MemoViewController" customModule="ARKit_Emperor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OEg-WY-daF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OF4-uc-KTD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZN-Ut-mPW">
+                                <rect key="frame" x="100" y="563" width="60" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="VUG-Pu-B9e"/>
+                                    <constraint firstAttribute="width" constant="60" id="dRl-2l-9dg"/>
+                                </constraints>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveButton:" destination="mtc-6R-sFz" eventType="touchUpInside" id="SOQ-Rv-6O9"/>
+                                    <action selector="saveMemo:" destination="mtc-6R-sFz" eventType="touchUpInside" id="O0t-It-J42"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNw-fK-B3j">
+                                <rect key="frame" x="215" y="563" width="60" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="1t2-fh-Sjt"/>
+                                    <constraint firstAttribute="height" constant="40" id="SHU-zO-jaI"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Load"/>
+                                <connections>
+                                    <action selector="loadButton:" destination="mtc-6R-sFz" eventType="touchUpInside" id="ey6-TT-XXE"/>
+                                    <action selector="loadMemo:" destination="mtc-6R-sFz" eventType="touchUpInside" id="ET0-dw-dtL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vS4-Xq-Jzu" firstAttribute="bottom" secondItem="FNw-fK-B3j" secondAttribute="bottom" constant="64" id="HmK-Bz-QT7"/>
+                            <constraint firstItem="vS4-Xq-Jzu" firstAttribute="trailing" secondItem="FNw-fK-B3j" secondAttribute="trailing" constant="100" id="LWt-wO-YUR"/>
+                            <constraint firstItem="vS4-Xq-Jzu" firstAttribute="bottom" secondItem="MZN-Ut-mPW" secondAttribute="bottom" constant="64" id="fg3-oq-Fx5"/>
+                            <constraint firstItem="MZN-Ut-mPW" firstAttribute="leading" secondItem="vS4-Xq-Jzu" secondAttribute="leading" constant="100" id="i42-ug-A9R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vS4-Xq-Jzu"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="OF4-uc-KTD" id="NkE-gO-V0n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xBM-el-N3F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="143.19999999999999" y="572.56371814092961"/>
+        </scene>
+    </scenes>
+</document>

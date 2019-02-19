@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="83Q-4i-tMd">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Basics View Controller-->
+        <scene sceneID="TYO-FQ-w9x">
+            <objects>
+                <viewController id="83Q-4i-tMd" customClass="BasicsViewController" customModule="ARKit_Emperor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iTQ-X0-EBh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VBY-U7-QBN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VBY-U7-QBN" firstAttribute="top" secondItem="iTQ-X0-EBh" secondAttribute="top" id="Xv0-IO-SDO"/>
+                            <constraint firstItem="VBY-U7-QBN" firstAttribute="leading" secondItem="iTQ-X0-EBh" secondAttribute="leading" id="Z3J-Tr-cL9"/>
+                            <constraint firstAttribute="trailing" secondItem="VBY-U7-QBN" secondAttribute="trailing" id="hjH-YH-z2o"/>
+                            <constraint firstItem="VBY-U7-QBN" firstAttribute="bottom" secondItem="wTx-CM-19a" secondAttribute="bottom" id="wFc-HO-cOd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wTx-CM-19a"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="VBY-U7-QBN" id="wtY-HM-BHo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hin-Mj-tNR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="688.79999999999995" y="552.77361319340332"/>
+        </scene>
+    </scenes>
+</document>

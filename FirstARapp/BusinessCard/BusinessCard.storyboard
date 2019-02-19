@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nSA-Sy-wjw">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Business Card View Controller-->
+        <scene sceneID="Ivx-DI-Jnm">
+            <objects>
+                <viewController id="nSA-Sy-wjw" customClass="BusinessCardViewController" customModule="ARKit_Emperor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mvp-dX-GbY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UbB-Wt-vcz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="UbB-Wt-vcz" secondAttribute="trailing" id="Cp0-wh-oY3"/>
+                            <constraint firstItem="UbB-Wt-vcz" firstAttribute="top" secondItem="mvp-dX-GbY" secondAttribute="top" id="XdW-5S-Zxs"/>
+                            <constraint firstItem="UbB-Wt-vcz" firstAttribute="bottom" secondItem="jTQ-BT-E5E" secondAttribute="bottom" id="cjM-L1-vwI"/>
+                            <constraint firstItem="UbB-Wt-vcz" firstAttribute="leading" secondItem="mvp-dX-GbY" secondAttribute="leading" id="s4o-Ym-1vS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jTQ-BT-E5E"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="UbB-Wt-vcz" id="FWy-G7-MUH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q4s-nN-nIL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="688.79999999999995" y="552.77361319340332"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b22-tf-tqi">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="3af-IR-9kL">
+            <objects>
+                <viewController id="b22-tf-tqi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dVp-QG-05b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WR8-vV-YeN">
+                                <rect key="frame" x="163" y="77" width="49" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Doodle"/>
+                                <connections>
+                                    <action selector="doodleButton:" destination="ZFU-Lc-gnF" eventType="touchUpInside" id="ew3-DM-z6r"/>
+                                    <segue destination="t0N-mW-8H2" kind="show" id="yrX-pq-Czo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8p0-JM-60e">
+                                <rect key="frame" x="140.5" y="219" width="94" height="30"/>
+                                <state key="normal" title="BusinessCard"/>
+                                <connections>
+                                    <action selector="businessCard:" destination="ZFU-Lc-gnF" eventType="touchUpInside" id="Mdh-2d-EcT"/>
+                                    <segue destination="vNv-0D-jvw" kind="show" id="oM2-Sp-7QS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGk-Y5-TF9">
+                                <rect key="frame" x="166" y="297" width="43" height="30"/>
+                                <state key="normal" title="Memo"/>
+                                <connections>
+                                    <action selector="memoButton:" destination="ZFU-Lc-gnF" eventType="touchUpInside" id="fA4-0G-tbA"/>
+                                    <segue destination="Z3b-vS-Gw5" kind="show" id="bYb-WR-B8M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ls2-zA-q7d">
+                                <rect key="frame" x="165" y="390" width="45" height="30"/>
+                                <state key="normal" title="Basics"/>
+                                <connections>
+                                    <action selector="basicsButton:" destination="ZFU-Lc-gnF" eventType="touchUpInside" id="GgR-Q7-bKI"/>
+                                    <segue destination="EgL-RO-G3z" kind="show" id="3ab-tD-ngy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ZT-Br-XgH">
+                                <rect key="frame" x="166" y="148" width="43" height="30"/>
+                                <state key="normal" title="Mirror"/>
+                                <connections>
+                                    <action selector="mirrorButton:" destination="ZFU-Lc-gnF" eventType="touchUpInside" id="wdY-Sr-xtR"/>
+                                    <segue destination="Tsh-hU-jke" kind="show" id="QBW-6L-uVZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8p0-JM-60e" firstAttribute="centerX" secondItem="dVp-QG-05b" secondAttribute="centerX" id="Heh-UR-sp4"/>
+                            <constraint firstItem="0ZT-Br-XgH" firstAttribute="top" secondItem="WR8-vV-YeN" secondAttribute="bottom" constant="41" id="SHy-1F-cba"/>
+                            <constraint firstItem="8p0-JM-60e" firstAttribute="top" secondItem="0ZT-Br-XgH" secondAttribute="bottom" constant="41" id="Ttf-Cl-i0n"/>
+                            <constraint firstItem="Ls2-zA-q7d" firstAttribute="centerX" secondItem="dVp-QG-05b" secondAttribute="centerX" id="cTC-Px-FT3"/>
+                            <constraint firstItem="Ls2-zA-q7d" firstAttribute="top" secondItem="kGk-Y5-TF9" secondAttribute="bottom" constant="63" id="hsx-25-tz0"/>
+                            <constraint firstItem="kGk-Y5-TF9" firstAttribute="top" secondItem="8p0-JM-60e" secondAttribute="bottom" constant="48" id="iRE-yG-mCt"/>
+                            <constraint firstItem="0ZT-Br-XgH" firstAttribute="top" secondItem="dVp-QG-05b" secondAttribute="top" constant="148" id="mB5-YC-YCd"/>
+                            <constraint firstItem="kGk-Y5-TF9" firstAttribute="trailing" secondItem="0ZT-Br-XgH" secondAttribute="trailing" id="orS-cL-TA3"/>
+                            <constraint firstItem="0ZT-Br-XgH" firstAttribute="centerX" secondItem="dVp-QG-05b" secondAttribute="centerX" id="rpA-WO-hwB"/>
+                            <constraint firstItem="kGk-Y5-TF9" firstAttribute="centerX" secondItem="dVp-QG-05b" secondAttribute="centerX" id="uYI-on-fla"/>
+                            <constraint firstItem="WR8-vV-YeN" firstAttribute="centerX" secondItem="dVp-QG-05b" secondAttribute="centerX" id="xcz-ya-i6m"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KQL-fv-FGN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vDB-v8-tjF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ZFU-Lc-gnF" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-204" y="126.38680659670166"/>
+        </scene>
+        <!--Doodle View Controller-->
+        <scene sceneID="7G3-T6-L7w">
+            <objects>
+                <viewController id="t0N-mW-8H2" customClass="DoodleViewController" customModule="ARKit_Emperor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6FL-mx-oqu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6BU-ya-Cpx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6BU-ya-Cpx" firstAttribute="top" secondItem="6FL-mx-oqu" secondAttribute="top" id="hFo-zO-a04"/>
+                            <constraint firstAttribute="trailing" secondItem="6BU-ya-Cpx" secondAttribute="trailing" id="k86-sj-ygG"/>
+                            <constraint firstItem="6BU-ya-Cpx" firstAttribute="leading" secondItem="6FL-mx-oqu" secondAttribute="leading" id="kqM-Ba-pNZ"/>
+                            <constraint firstItem="6BU-ya-Cpx" firstAttribute="bottom" secondItem="ykk-SN-79z" secondAttribute="bottom" id="t5T-SP-vcL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ykk-SN-79z"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="6BU-ya-Cpx" id="1E8-ZQ-ehf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uXq-nG-LcB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="708" y="553"/>
+        </scene>
+        <!--Mirror View Controller-->
+        <scene sceneID="dtO-3k-FML">
+            <objects>
+                <viewController id="Tsh-hU-jke" customClass="MirrorViewController" customModule="ARKit_Emperor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MWL-69-pog">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0oy-et-6vf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0oy-et-6vf" firstAttribute="top" secondItem="MWL-69-pog" secondAttribute="top" id="1gx-Kz-Z8m"/>
+                            <constraint firstItem="0oy-et-6vf" firstAttribute="leading" secondItem="MWL-69-pog" secondAttribute="leading" id="Nxl-Vd-3kQ"/>
+                            <constraint firstAttribute="trailing" secondItem="0oy-et-6vf" secondAttribute="trailing" id="VKy-CB-sh3"/>
+                            <constraint firstItem="0oy-et-6vf" firstAttribute="bottom" secondItem="vxy-F9-ReO" secondAttribute="bottom" id="pBZ-mR-hII"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vxy-F9-ReO"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="0oy-et-6vf" id="6RO-8U-xrf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gwm-g8-EMe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="663" y="-345"/>
+        </scene>
+        <!--Business Card View Controller-->
+        <scene sceneID="iyb-50-uZo">
+            <objects>
+                <viewController id="vNv-0D-jvw" customClass="BusinessCardViewController" customModule="ARKit_Emperor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hmo-11-j9p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eRl-yN-ncE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eRl-yN-ncE" firstAttribute="bottom" secondItem="9Zd-5M-QgG" secondAttribute="bottom" id="V7d-oQ-hh5"/>
+                            <constraint firstItem="eRl-yN-ncE" firstAttribute="top" secondItem="hmo-11-j9p" secondAttribute="top" id="Yau-CJ-Anh"/>
+                            <constraint firstItem="eRl-yN-ncE" firstAttribute="leading" secondItem="hmo-11-j9p" secondAttribute="leading" id="ZZu-Ut-BI3"/>
+                            <constraint firstAttribute="trailing" secondItem="eRl-yN-ncE" secondAttribute="trailing" id="hbv-Mt-wkm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9Zd-5M-QgG"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="eRl-yN-ncE" id="Rqf-4f-znS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jlV-wA-tU3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1447" y="-346"/>
+        </scene>
+        <!--Memo View Controller-->
+        <scene sceneID="CJk-cg-NZe">
+            <objects>
+                <viewController id="Z3b-vS-Gw5" customClass="MemoViewController" customModule="ARKit_Emperor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="010-Cy-iHd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eJL-GT-Wgr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQ5-GS-ext">
+                                <rect key="frame" x="100" y="563" width="60" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="OOt-Zb-ttB"/>
+                                    <constraint firstAttribute="width" constant="60" id="YZL-nW-vbz"/>
+                                </constraints>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveButton:" destination="Z3b-vS-Gw5" eventType="touchUpInside" id="2PL-Qg-0DF"/>
+                                    <action selector="saveMemo:" destination="Z3b-vS-Gw5" eventType="touchUpInside" id="dcY-gz-FiB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XiB-WH-ax1">
+                                <rect key="frame" x="215" y="563" width="60" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="X2I-bH-51v"/>
+                                    <constraint firstAttribute="width" constant="60" id="kw8-no-jto"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Load"/>
+                                <connections>
+                                    <action selector="loadButton:" destination="Z3b-vS-Gw5" eventType="touchUpInside" id="ZkW-5B-SDM"/>
+                                    <action selector="loadMemo:" destination="Z3b-vS-Gw5" eventType="touchUpInside" id="TLs-Ae-0aY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LGh-SV-gLA" firstAttribute="trailing" secondItem="XiB-WH-ax1" secondAttribute="trailing" constant="100" id="KDL-a5-5bq"/>
+                            <constraint firstItem="LGh-SV-gLA" firstAttribute="bottom" secondItem="XiB-WH-ax1" secondAttribute="bottom" constant="64" id="UT7-bj-YEC"/>
+                            <constraint firstItem="yQ5-GS-ext" firstAttribute="leading" secondItem="LGh-SV-gLA" secondAttribute="leading" constant="100" id="awS-fl-3tm"/>
+                            <constraint firstItem="LGh-SV-gLA" firstAttribute="bottom" secondItem="yQ5-GS-ext" secondAttribute="bottom" constant="64" id="lE2-e8-Y3R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LGh-SV-gLA"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="eJL-GT-Wgr" id="ZTK-OS-q8U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zdd-SA-JHg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1497" y="553"/>
+        </scene>
+        <!--Basics View Controller-->
+        <scene sceneID="hQ9-L0-zR2">
+            <objects>
+                <viewController id="EgL-RO-G3z" customClass="BasicsViewController" customModule="ARKit_Emperor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0O9-ef-oHs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WAE-Qw-p7G">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WAE-Qw-p7G" firstAttribute="top" secondItem="0O9-ef-oHs" secondAttribute="top" id="71P-iE-Ii8"/>
+                            <constraint firstItem="WAE-Qw-p7G" firstAttribute="bottom" secondItem="idT-gr-T9s" secondAttribute="bottom" id="D69-1g-hPT"/>
+                            <constraint firstAttribute="trailing" secondItem="WAE-Qw-p7G" secondAttribute="trailing" id="VQ6-ss-ltH"/>
+                            <constraint firstItem="WAE-Qw-p7G" firstAttribute="leading" secondItem="0O9-ef-oHs" secondAttribute="leading" id="tng-YH-7Xu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="idT-gr-T9s"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="WAE-Qw-p7G" id="OWC-UU-6Xd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cn3-xu-Nxo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2220" y="86"/>
+        </scene>
+    </scenes>
+</document>
